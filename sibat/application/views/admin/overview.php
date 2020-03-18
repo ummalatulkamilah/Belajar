@@ -18,7 +18,9 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Jumlah obat kadaluarsa</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                     <?php foreach($exp as $e){ ?> 
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"> <?php echo $e ;?> </div>
+                        <?php } ?>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -35,7 +37,9 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Obat yang hampir habis</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                      <?php foreach($stok as $s){ ?> 
+                      <div class="h6 mb-0 text-gray-800"> <?php echo $s ;?></div>
+                      <?php } ?>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -49,7 +53,7 @@
     
             <!-- Pending Requests Card Example -->
        
-         
+          
           
 
 
